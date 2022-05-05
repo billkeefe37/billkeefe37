@@ -1,0 +1,33 @@
+# Date Created: 08/17/2019
+# Written by: Bill Keefe
+# Title: Install and Update Google Chrome
+# Version: 1.0
+#
+# Downloads and installs Google Chrome. 
+# Can be added to a policy in Jamf Pro.
+#
+###############################################################################
+
+
+#!/bin/sh
+
+echo "Downloading the latest Google Chrome..."
+curl -sL https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg -o /tmp/googlechrome.dmg
+echo "Mounting and checking image..."
+hdiutil attach -nobrowse /tmp/googlechrome.dmg
+if [[ -e /Applications/Google\ Chrome.app ]]; then
+ echo "Removing Google Chrome..."
+ rm -R /Applications/Google\ Chrome.app 
+ echo "Updating Google Chrome..."
+else
+ echo "Installing Google Chrome..."
+fi
+cp -R "/Volumes/Google Chrome/Google Chrome.app" /Applications/
+echo "Setting permissions..."
+chown -R root:wheel /Applications/Google\ Chrome.app
+echo "Cleaning up..."
+hdiutil detach "/Volumes/Google Chrome/"
+rm /tmp/googlechrome.dmg
+echo "Done."
+
+#End Script
