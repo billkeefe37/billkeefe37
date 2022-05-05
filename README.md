@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Bill Keefe
 - 👀 I’m interested in leanring new languages, 4 and 6 stringed instruments, macOS, Jamf Pro & Salesforce
 - 🌱 I’m currently learning Salesforce Admnistration
-- 💞️ I’m looking to collaborate on Poweshell, Python, Salesforce & Jamf Pro
+- 💞️ I’m looking to collaborate on Powershell, Python, Salesforce & Jamf Pro
 - 📫 How to reach me https://www.linkedin.com/in/williamkeefeiv/
 
 <!---
