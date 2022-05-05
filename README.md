@@ -8,3 +8,6 @@
 billkeefe37/billkeefe37 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+
+**remote_remove_user_profile**
+The remote_remove_user_profile script is designed to remove user profiles of off-boarded users or user profile that are no longer needed. The intended purpose is to use this script to clear harddrive space on shared PC and avoid distrurbing an end user while the PC is in use. 
